@@ -1,0 +1,26 @@
+<h1>Post a picture</h1>
+<form action ="/upload" method="POST" encType="multipart/form-data">
+    <div>
+        <label for="postname">Write a title</label>
+        <input type="text" id="postname" name="postname" required>
+    </div>
+    <div>
+        <label for="taglist">Wybierz tag:</label>
+        <select name="taglist" required>
+            <option value="Smieszne">Funny</option>
+            <option value="Straszne">Scary</option>
+            <option value="Takie_Sobie">Meh</option>
+        </select>
+    </div>
+    <input type="file" name="uploadFile" accept="image/*" required>
+    <input type="submit"></form>
+<a href="/">Wróć</a>
+
+<!--post musi miec
+id posta
+id postujacego
+tytul
+tag
+wynik
+date
+-->
